@@ -1,0 +1,90 @@
+body {
+    font-family: sans-serif;
+    background-color:lightgrey;
+}
+
+h1 {
+    color: gray;
+    font: Verdana;
+}
+
+.maindiv {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white; 
+    border-radius: 25px;
+    padding: 20px;
+    width: 50%;
+}
+
+.button {
+    background-color: #546dc0;
+    border: 1px solid grey;
+    border-radius: 5px;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 14px;
+    transition-duration: 0.1s;
+  }
+
+.button:hover {
+    background-color: #3d5cc0; /* Green */
+    color: white;
+  }
+
+.button:active {
+    background-color: #4d5a86; /* Green */
+    color: white;
+  }
+
+input[type=text] {
+    border: 1px solid gray;
+    border-radius: 4px;
+    box-sizing: border-box;
+    height: 25px;
+    width: 75%;
+  }
+
+
+select {
+    border: 1px solid gray;
+    height: 25px;
+    box-sizing: border-box;
+    width: 75%;
+  }
+
+
+.slider {
+    -webkit-appearance: none;
+    width: 75%;
+    height: 15px;
+    background: lightgrey;
+    border-radius: 5px; 
+    outline: none;
+    opacity: 0.8;
+    -webkit-transition: 0.2s;
+    transition: opacity 0.2s;
+  }
+
+
+  .slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #546dc0;
+    cursor: pointer;
+  }
+  
+.slider:hover {
+    opacity: 1;
+  }
+  
+
+  .hr {
+    border: 1px solid lightgrey;
+  }
