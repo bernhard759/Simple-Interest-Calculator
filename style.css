@@ -33,12 +33,12 @@ h1 {
   }
 
 .button:hover {
-    background-color: #3d5cc0; /* Green */
+    background-color: #3d5cc0;
     color: white;
   }
 
 .button:active {
-    background-color: #4d5a86; /* Green */
+    background-color: #4d5a86;
     color: white;
   }
 

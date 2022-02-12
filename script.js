@@ -8,23 +8,23 @@ function compute() {
 
     // variable for amount input
     var principal = document.getElementById("principal").value;
-    console.log(principal);
+    //console.log(principal);
 
     // variable for rate input
     var rate = document.getElementById("rate").value;
-    console.log(rate);
+    //console.log(rate);
 
     // variable for years input
     var years = document.getElementById("years").value;
-    console.log(years);
+    //console.log(years);
 
     // result
-    var result = principal * years * rate / 100;
-    console.log(result);
+    var result = principal * Math.pow(1 + (rate / 100), years);
+    //console.log(result);
 
     // convert number of years to the actual year in the future
     var futureyear = new Date().getFullYear() + parseInt(years);
-    console.log(futureyear);
+    //console.log(futureyear);
 
     // output
     var output = "If you deposit <mark>" + principal + "</mark><br /> at an interest rate of <mark>" +
@@ -39,10 +39,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
     let select = document.getElementById("years");
     let options = Array.from({length: 10}, (_, i) => i + 1);
-    console.log(options);
+    //console.log(options);
     for (var i = 0; i < options.length; i++) {
         var opt = options[i];
-        console.log(opt);
+        //console.log(opt);
         var el = document.createElement("option");
         el.textContent = opt;
         el.value = String(opt);
@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 function ranger() {
     var val = document.getElementById("rate").value;
     document.getElementById("span1").innerHTML = val; // display this value to the html page
-    console.log(val);
+    //console.log(val);
 };
 
 
